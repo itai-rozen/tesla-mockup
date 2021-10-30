@@ -69,6 +69,10 @@
 
 /* page selectors */
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body::-webkit-scrollbar {
     display: none;
@@ -77,6 +81,7 @@ body::-webkit-scrollbar {
 }
 
 body {
+    scroll-snap-type: y mandatory;
     font-family: gotham1;
     -ms-overflow-style: none;   /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -269,6 +274,7 @@ button {
     font-size: 1.2em;
 }
 .page-2 {   
+    scroll-snap-align: start;
     background-color: #f5f5f5;
     background: url('./../assets/images/page-2-image.png') no-repeat center bottom/cover #f5f5f5;
     background-size: 1200px auto;
