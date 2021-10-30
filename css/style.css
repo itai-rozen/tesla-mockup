@@ -178,7 +178,7 @@ button {
     cursor: pointer;
     z-index: 1;
     mix-blend-mode:difference;
-    color: #fff;
+    color: #fff; 
 }
 
 .logo #page-2 {
@@ -187,7 +187,7 @@ button {
 
 .main-header {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -195,7 +195,7 @@ button {
 .model-list-container {
     max-width: 640px;
     margin: 0 auto;
-    margin-top: 450px;
+    margin-top: 430px;
 }
 
 .model-properties-list li {
