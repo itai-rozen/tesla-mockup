@@ -272,8 +272,9 @@ button {
     background-color: #f5f5f5;
     background: url('./../assets/images/page-2-image.png') no-repeat center bottom/cover #f5f5f5;
     background-size: 1200px auto;
-    background-position: 120px -20px; 
+    background-position: 120px 0px; 
     color: #000;
+    /* margin-top: 20px; */
 }
 
 .page-2 .scroll {
@@ -393,7 +394,7 @@ aside .rating-param-list li .param-stars {
 
 .arrow-1 {
     position: absolute;
-    top: 1137px;
+    top: 1157px;
     left: 748px;
     height: 125px;
 }
@@ -403,7 +404,7 @@ aside .rating-param-list li .param-stars {
 .line-text-1 {
     position: absolute;
     width: 200px;
-    top: 1260px;
+    top: 1280px;
     left: 890px;
 }
 .arrow-1 .line {
@@ -426,7 +427,7 @@ aside .rating-param-list li .param-stars {
 .arrow-2 {
     position: absolute;
     transform: rotate(-90deg);
-    top: 750px;
+    top: 770px;
     left: 811px;
     height: 125px;
 }
@@ -434,7 +435,7 @@ aside .rating-param-list li .param-stars {
 .line-text-2 {
     position: absolute;
     width: 200px;
-    top: 727px;
+    top: 747px;
     left: 846px;
     font-size: 0.9em;
 }
@@ -457,7 +458,7 @@ aside .rating-param-list li .param-stars {
 }
 .arrow-3 {
     position: absolute;
-    top:  875px;
+    top:  895px;
     left: 505px;
     height: 125px;
     transform: rotate(-90deg);
@@ -466,7 +467,7 @@ aside .rating-param-list li .param-stars {
 .line-text-3 {
     position: absolute;
     width: 200px;
-    top: 805px;
+    top: 825px;
     left: 587px;
 }
 .arrow-3 .line {
