@@ -491,9 +491,10 @@ aside .rating-param-list li .param-stars {
 
 
 .page-3 {
-    overflow-y: hidden;
     font-family: gotham-light;
+    overflow-y: hidden;
 }
+
 
 .page-3 .scroll {
     top:230% ;
@@ -535,6 +536,7 @@ aside .rating-param-list li .param-stars {
 
 .page-3 aside, .page-3 main {
     height: 34vh;
+    overflow-y: hidden;
 }
 
 .page-3 aside {
@@ -569,9 +571,10 @@ aside .rating-param-list li .param-stars {
 
 .page-3 main .info {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 20px;    
     padding: 50px 280px 100px 20px;
 }
+
 
 .chat-btn {
     background: url('./../assets/svg/chat.svg') no-repeat center center;
