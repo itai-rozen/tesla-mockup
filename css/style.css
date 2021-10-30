@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    transition: ease-out .3s;
+}
+
+*:hover {
+    transition: ease-in .3s;
+}
+
+
+  @font-face {
+      font-family: gotham1;
+      src: url('./../assets/fonts/gotham-1.woff2');
+  }
+
+  @font-face {
+      font-family: gotham-bold;
+      src: url('./../assets/fonts/gotham-bold.woff2');
+  }
+  @font-face {
+      font-family: gotham-light;
+      src: url('./../assets/fonts/gotham-light.woff2');
+  }
+  @font-face {
+      font-family: gotham-medium;
+      src: url('./../assets/fonts/gotham-medium.woff2');
+  }
+  @font-face {
+      font-family: gotham-book;
+      src: url('./../assets/fonts/gotham-book.woff2');
+  }
+
+  @font-face {
+    /* Defining what the font will be called */
+    font-family: tesla;
+    /* Linking to the font file */
+    src: url('./../assets/fonts/TESLA.ttf');
+  }
+
+/* utility selectors */
+.clr {
+    clear: both;
+}
+.fixed {
+    display: fixed;
+}
+.sticky {
+    position: sticky;
+}
+
+.center {
+    text-align: center;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.round {
+    border-radius: 50%;
+}
+
+
+/* page selectors */
+
+
+body::-webkit-scrollbar {
+    display: none;
+    /* float: left; */
+    /* margin-left: 40px; */
+}
+
+body {
+    font-family: gotham1;
+    -ms-overflow-style: none;   /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Scroller mock */
+
+.scroll {
+    width: 10px;
+    position: absolute  ;
+    left: 12px;
+    height: auto;
+    width: 3px;
+    top: 30%;
+    z-index: 1;
+}  
+
+.scrolling-unit {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 24px;
+    margin-top: 3px;
+}  
+
+.page-1 .active {
+    background-color: #f5f5f5;
+}
+
+.page-1 {
+    background: url('./../assets/images/page-1-image.jfif') no-repeat center center/cover;
+    background-position: 50% 35%;
+    color: #fff;
+}
+
+.page-1 nav {
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+
+}
+
+nav li {
+    font-family: gotham-medium;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+button {
+    cursor: pointer;
+}
+
+
+
+.page-1 .navbar-models {
+    /* width: 40%; */
+    margin-top: 10px;
+    position: relative;
+}
+
+.page-1 .navbar-models li {
+    padding:  10px 15px;
+
+}
+.page-1 .navbar-menu {
+    padding: 0 20px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+}
+
+.page-1 .navbar-menu li {
+    padding: 10px 15px;
+}
+
+.page-1 .navbar-menu li:hover, .page-1 .navbar-models li:hover {
+    background-color: rgba(133, 133, 133, 0.7);
+    border-radius: 20px;
+}
+
+.logo {
+
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: tesla;
+    letter-spacing: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+    mix-blend-mode:difference;
+    color: #fff;
+}
+
+.logo #page-2 {
+    color: #000;
+}
+
+.main-header {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.model-list-container {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 450px;
+}
+
+.model-properties-list li {
+    /* padding: 0px auto; */
+    margin: 0 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.property-main img {
+    width: 40px;
+    height: 21px;
+}
+
+.model-properties-list li .property-main {
+    font-size: 28px;
+}
+
+.model-properties-list li .property-extra {
+    font-size: 12px;
+    font-weight: 100;
+    padding-top: 10px ;
+} 
+.model-properties-list li .order-btn-container {
+    line-height: 63px;
+    padding-right: 0;
+}
+
+ .order-btn {
+    border-radius: 50px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    padding: 8px 33px;
+
+}
+
+.model-properties-list li .order-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.model-properties-list li:first-child {
+    margin-left: 0;
+}
+
+.model-properties-list li:last-child {
+    margin-right: 0;
+}
+
+.arrow-container  .down-arrow {
+    margin: 0 auto;
+    width: 40px;
+    font-weight: 100;
+    margin-top: 10px;
+    transition: 1s;
+    cursor: pointer ;
+}
+
+.down-arrow:hover {
+    margin-top: 15px;
+    transition: 1s;
+}
+
+/* PAGE 2 */
+.nav-up-arrow a  {
+    position: fixed;
+    color: #333;
+    right: 40px;
+    top: 20px;
+    font-size: 1.2em;
+}
+.page-2 {   
+    background-color: #f5f5f5;
+    background: url('./../assets/images/page-2-image.png') no-repeat center bottom/cover #f5f5f5;
+    background-size: 1200px auto;
+    background-position: 120px -20px; 
+    color: #000;
+}
+
+.page-2 .scroll {
+    top:130% ;
+}
+
+.page-2 .scrolling-unit {
+    background-color: rgba(0, 0, 0, 0.1);
+}  
+
+.page-2 .active {
+    background-color: #000;
+}
+
+.page-2 aside {
+    float: left;
+    background-color: #fff;
+    max-width: 410px;
+    height: 100vh;
+    padding: 0 50px;
+    font-family: gotham-book;
+}
+
+.page-2 aside .aside-headers {
+    margin-top: 30px;
+}
+
+.page-2 aside .aside-headers h1 {
+    font-size: 1.7em;
+}
+article {
+    font-size: 14px;
+    padding: 20px 0;
+    line-height: 21px;
+}
+
+.rating-container {
+    background-color: #E2E4E4;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.rating-container .rating-header {
+    font-size: 20px;
+    /* padding: 25px; */
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: gotham-light;
+    
+}
+aside .rating-param-list li {
+    display: block;
+    padding-bottom: 11px;
+}
+
+aside .rating-param-list li .param {
+    font-size: 0.9em;
+    font-family: gotham-medium;
+}
+aside .rating-param-list li .param-extra {
+    font-size: 0.5em;
+}
+
+aside .rating-param-list li .param-stars { 
+    float: right;
+    padding-right: 0px;
+    width: auto;
+}
+
+.aside-btns {
+    margin-top: 25px;
+}
+
+.aside-btns button {
+    background-color: white;
+    border: 3px solid black;
+    color: #000;
+}
+
+.aside-btns button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.aside-btns .order-btn {
+    padding: 8px 23px ;
+    height: 40px;
+    margin-right: 20px;
+}
+ .aside-btns .learn-btn-container {
+     line-height: 40px;
+ }
+
+.aside-btns .learn-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    position: relative;
+}
+.aside-btns .learn-btn-text {
+    font-size: 0.7em;
+    position: absolute;
+    padding-left: 10px;
+}
+
+/* PAGE 2 ARROWS */
+
+
+
+.arrow {
+
+    z-index: 2;
+    overflow: hidden;
+    line-height: 15px;
+    transform: rotate(90deg);
+}
+
+.arrow-1 {
+    position: absolute;
+    top: 1137px;
+    left: 748px;
+    height: 125px;
+}
+.line-text-1, .line-text-2, .line-text-3 {
+    font-size: 0.9em;
+}
+.line-text-1 {
+    position: absolute;
+    width: 200px;
+    top: 1260px;
+    left: 890px;
+}
+.arrow-1 .line {
+    position: relative;
+    top: 7px;
+    height: 3px;
+    width: 158px;
+    background-color: black;
+    line-height: 17px;
+}
+
+.arrow-1 .dot {
+    position:relative;
+    bottom: 4px;
+    right: 1px;
+    line-height: 15px;
+    font-size: 0.5em;
+    color: white;
+}
+.arrow-2 {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 750px;
+    left: 811px;
+    height: 125px;
+}
+
+.line-text-2 {
+    position: absolute;
+    width: 200px;
+    top: 727px;
+    left: 846px;
+    font-size: 0.9em;
+}
+.arrow-2 .line {
+    position: relative;
+    top: 7px;
+    height: 3px;
+    width: 158px;
+    background-color: black;
+    line-height: 17px;
+}
+
+.arrow-2 .dot {
+    position:relative;
+    bottom: 4px;
+    right: 1px;
+    line-height: 15px;
+    font-size: 0.5em;
+    color: white;
+}
+.arrow-3 {
+    position: absolute;
+    top:  875px;
+    left: 505px;
+    height: 125px;
+    transform: rotate(-90deg);
+}
+
+.line-text-3 {
+    position: absolute;
+    width: 200px;
+    top: 805px;
+    left: 587px;
+}
+.arrow-3 .line {
+    position: relative;
+    top: 7px;
+    height: 3px;
+    width: 252.5px;
+    background-color: black;
+    line-height: 17px;
+}
+
+.arrow-3 .dot {
+    position:relative;
+    bottom: 4px;
+    right: 1px;
+    line-height: 15px;
+    font-size: 0.5em;
+    color: white;
+}
+
+/* PAGE 3 */
+
+
+.page-3 {
+    overflow-y: hidden;
+    font-family: gotham-light;
+}
+
+.page-3 .scroll {
+    top:230% ;
+}
+
+.page-3 .scrolling-unit {
+    background-color: rgba(255, 255, 255, 0.1);
+}  
+
+.page-3 .active {
+    background-color: #fff;
+}
+.page-3 .bg-image {
+    height: 66vh;
+    background: url('./../assets/images/page-3-image.jfif') no-repeat center center/cover ;
+    background-position: 50% 50%; 
+    color: #000;
+}
+
+.page-3 .model-list-container {
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 320px;
+    color: #fff;
+}
+
+.page-3 .model-properties-list li:nth-child(2){
+    margin: 0 25px;
+}
+
+.smaller-font {
+    font-size: 24px;
+}
+
+.page-3 .model-properties-list li {
+    text-align: center;
+    font-weight: bold;
+}
+
+.page-3 aside, .page-3 main {
+    height: 34vh;
+}
+
+.page-3 aside {
+    width: 40vw;
+    padding-left: 280px;
+}
+
+
+.page-3 .aside-headers  {
+    padding: 45px 16px 16px 0;
+} 
+.page-3 .aside-headers h1 {
+    font-size: 1.7em;
+} 
+
+.page-3 .aside-btns {
+    font-family: gotham-book;
+    margin-top: 0;
+}
+
+.page-3 .aside-btns .order-btn {
+    margin-right: 50px;
+}
+.page-3 .aside-btns .learn-btn-text {
+    font-size: 0.75em;
+    position: absolute;
+    padding-left: 10px;
+}
+.page-3 main {
+    width: 60%;
+}
+
+.page-3 main .info {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 50px 280px 100px 20px;
+}
+
+.chat-btn {
+    background: url('./../assets/svg/chat.svg') no-repeat center center;
+    position: fixed;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+    top: 589.6px;
+    right: 35px;
+    height: 52px;
+    width: 52px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
